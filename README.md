@@ -53,6 +53,8 @@ datalake-nextjs/
 
 ## Getting Started
 
+### Option 1: Local Development
+
 1. **Install Dependencies**:
    ```bash
    npm install
@@ -65,6 +67,34 @@ datalake-nextjs/
 
 3. **Open Application**:
    Navigate to [http://localhost:3000](http://localhost:3000)
+
+### Option 2: Docker Development
+
+1. **Run with Docker Compose (Development)**:
+   ```bash
+   docker-compose -f docker-compose.dev.yml up --build
+   ```
+
+2. **Open Application**:
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+### Option 3: Docker Production
+
+1. **Build and Run Production Container**:
+   ```bash
+   docker-compose up --build
+   ```
+
+2. **Open Application**:
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+### Docker Commands
+
+- **Build only**: `docker-compose build`
+- **Run in background**: `docker-compose up -d`
+- **Stop containers**: `docker-compose down`
+- **View logs**: `docker-compose logs -f`
+- **Development mode**: `docker-compose -f docker-compose.dev.yml up`
 
 ## Usage
 
