@@ -7,7 +7,7 @@ export const Header: React.FC = () => {
         <div className="flex items-center justify-between">
           <div className="space-y-1">
             <h1 className="text-3xl font-bold text-white tracking-tight flex items-center gap-3">
-              <span>Flare Gas to Human Value</span>
+              <span>Flare Gas Analytics</span>
             </h1>
             <p className="text-emerald-50 text-sm font-medium tracking-wide">
               Local Satellite Data · Real-time Environmental Intelligence · 2024
