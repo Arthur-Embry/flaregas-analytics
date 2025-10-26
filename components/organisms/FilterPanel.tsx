@@ -75,9 +75,9 @@ export const FilterPanel: React.FC<FilterPanelProps> = ({
           <Input
             type="number"
             id="minVolume"
-            value="0"
-            step="0.001"
-            min="0"
+            value={0}
+            step={0.001}
+            min={0}
             onChange={(e) => onMinVolumeChange(parseFloat(e.target.value) || 0)}
           />
         </FormField>
