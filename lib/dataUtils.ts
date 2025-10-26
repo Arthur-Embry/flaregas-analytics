@@ -79,9 +79,9 @@ export const filterData = (
 };
 
 export const getUniqueCountries = (data: FlaringDataPoint[]): string[] => {
-  return [...new Set(data.map(d => d.country))].filter(Boolean).sort();
+  return Array.from(new Set(data.map(d => d.country))).filter(Boolean).sort();
 };
 
 export const getUniqueTypes = (data: FlaringDataPoint[]): string[] => {
-  return [...new Set(data.map(d => d.type))].filter(Boolean).sort();
+  return Array.from(new Set(data.map(d => d.type))).filter(Boolean).sort();
 };
